@@ -1,13 +1,15 @@
+import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Start from "./pages/Start";
 import Header from "./components/header";
 import Click from "./pages/Click";
 import Library from "./pages/Library";
-import Choice from "./pages/Choice";
+import Choice from "./pages/choice";
 import Flashcard from "./pages/Flashcard";
 import Game from "./pages/game";
-import React from "react";
+import Dictation from "./pages/dictation";
+
 function App() {
   const location = useLocation();
 
@@ -24,6 +26,7 @@ function App() {
         <Route path="/Choice" element={<Choice />} />
         <Route path="/Flashcard" element={<Flashcard />} />
         <Route path="/Game" element={<Game />} />
+        <Route path="/dictation" element={<Dictation />} />
       </Routes>
     </>
   );

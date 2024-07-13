@@ -5,11 +5,9 @@ import { useNavigate } from "react-router-dom";
 
 const Flashcard: React.FC = () => {
   const navigate = useNavigate();
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showWord, setShowWord] = useState(false);
   const [showModal, setShowModal] = useState(false);
-
   const totalWords = words.length;
 
   const handleKnow = () => {
@@ -17,22 +15,26 @@ const Flashcard: React.FC = () => {
       setCurrentIndex(currentIndex + 1);
       setShowWord(false); // Reset to hide word for the next meaning
     } else {
-      setShowModal(true);
+      setShowModal(true); // Show completion modal
     }
   };
 
   const handleDontKnow = () => {
     if (currentIndex < totalWords - 1) {
-      setCurrentIndex(currentIndex + 1);
+      const updatedWords = [...words];
+      const currentWord = updatedWords.splice(currentIndex, 1)[0];
+      updatedWords.push(currentWord);
+      setCurrentIndex(currentIndex + 1); // Move to the next word
       setShowWord(false); // Reset to hide word for the next meaning
     } else {
-      setShowModal(true);
+      setShowModal(true); // Show completion modal
     }
   };
 
   const toggleWord = () => {
     setShowWord(!showWord);
   };
+
 
   return (
     <S.Container>
@@ -52,17 +54,14 @@ const Flashcard: React.FC = () => {
         <S.Button onClick={handleKnow}>알아요</S.Button>
       </S.Buttons>
       {showModal && (
-        <S.ModalOverlay>
+        <S.ModalContainer>
           <S.ModalContent>
-            <S.ModalHeader>학습 완료</S.ModalHeader>
-            <S.ModalBody>단어 학습을 완료하였습니다!-=09</S.ModalBody>
-            <S.ModalFooter>
-              <S.ModalButton onClick={() => navigate("/Home")}>
-                홈으로
-              </S.ModalButton>
-            </S.ModalFooter>
+            <S.ModalMessage>암기를 완료하였습니다!</S.ModalMessage>
+            <S.HomeButton onClick={() => navigate("/Home")}>
+              홈으로 가기
+            </S.HomeButton>
           </S.ModalContent>
-        </S.ModalOverlay>
+        </S.ModalContainer>
       )}
     </S.Container>
   );
