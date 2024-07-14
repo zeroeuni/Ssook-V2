@@ -5,7 +5,7 @@ import Start from "./pages/Start";
 import Header from "./components/header";
 import Click from "./pages/Click";
 import Library from "./pages/Library";
-import Choice from "./pages/choice";
+import Choice from "./pages/Choice";
 import Flashcard from "./pages/Flashcard";
 import Game from "./pages/game";
 import Dictation from "./pages/dictation";
