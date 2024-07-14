@@ -23,28 +23,25 @@ export const HomeTitle = styled.div`
   display: flex;
   font-size: 24px;
   margin-bottom: 20px;
-  margin-top: 7%;
+  margin-top: 5%;
 
   @media (max-width: 768px) {
-    font-size: 20px;
-    margin-top: 10%;
+    font-size: 16px;
   }
 
   @media (max-width: 480px) {
-    font-size: 18px;
-    margin-top: 12%;
+    font-size: 16px;
   }
 `;
 
 export const HomeButtonContainer = styled.div`
   display: flex;
   text-align: center;
-  gap: 22px;
+  gap: 16px;
   align-items: flex-start;
-  margin-bottom: 27px;
+  margin-bottom: 5px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
     gap: 10px;
   }
 `;
@@ -81,8 +78,7 @@ export const BoxContainer = styled.div`
   }
 
   @media (max-width: 480px) {
-    flex-direction: column;
-    gap: 10px;
+    font-size: 6px;
   }
 `;
 
@@ -102,8 +98,12 @@ export const Box = styled.div`
     border-left: 5px solid #0094ff;
   }
 
-  @media (max-width: 768px) {
-    width: calc(50% - 10px);
+  @media (min-width: 768px) {
+    width: calc(33.9% - 20px); /* 데스크탑 사이즈에서는 3열 */
+  }
+
+  @media (max-width: 768px) and (min-width: 481px) {
+    width: calc(50% - 20px);
   }
 
   @media (max-width: 480px) {
@@ -135,11 +135,11 @@ export const BoxTag = styled.div`
   text-align: center;
 
   @media (max-width: 768px) {
-    font-size: 8px;
+    font-size: 9px;
   }
 
   @media (max-width: 480px) {
-    font-size: 6px;
+    font-size: 9cappx;
   }
 `;
 
@@ -147,7 +147,7 @@ export const BoxDate = styled.div`
   font-size: 12px;
   color: #96979c;
   position: absolute;
-  bottom: 20px;
+  bottom: 16px;
   right: 20px;
 
   @media (max-width: 768px) {

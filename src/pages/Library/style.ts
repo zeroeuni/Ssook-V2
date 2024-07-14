@@ -8,21 +8,40 @@ export const HomeContainer = styled.div`
   background-color: #fbfbfb;
   flex-direction: column;
   padding: 0 16%;
+
+  @media (max-width: 768px) {
+    padding: 0 8%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 4%;
+  }
 `;
 
 export const HomeTitle = styled.div`
   display: flex;
   font-size: 24px;
-  margin-bottom: 20px;
-  margin-top: 7%;
+  margin-top: 5%;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const HomeButtonContainer = styled.div`
   display: flex;
   text-align: center;
-  gap: 22px;
+  gap: 16px;
   align-items: flex-start;
-  margin-bottom: 15px;
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
 `;
 
 interface ButtonProps {
@@ -39,6 +58,11 @@ export const HomeButton = styled.button<ButtonProps>`
   color: ${(props) => (props.selected ? "#ffffff" : "#0094ff")};
   cursor: pointer;
   transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 `;
 
 export const BoxContainer = styled.div`
@@ -46,6 +70,14 @@ export const BoxContainer = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 6px;
+  }
 `;
 
 export const Box = styled.div`
@@ -61,13 +93,33 @@ export const Box = styled.div`
   min-height: 170px;
 
   &:hover {
-    border-left: 5px solid #0094ff; /* 호버 시 파란색 세로 선 */
+    border-left: 5px solid #0094ff;
+  }
+
+  @media (min-width: 768px) {
+    width: calc(33.9% - 20px); /* 데스크탑 사이즈에서는 3열 */
+  }
+
+  @media (max-width: 768px) and (min-width: 481px) {
+    width: calc(50% - 20px);
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
   }
 `;
 
 export const BoxTitle = styled.div`
   font-size: 16px;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 export const BoxTag = styled.div`
@@ -79,12 +131,28 @@ export const BoxTag = styled.div`
   font-size: 10px;
   max-width: 60px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 8px;
+  }
 `;
 
 export const BoxDate = styled.div`
   font-size: 12px;
   color: #96979c;
   position: absolute;
-  bottom: 20px;
+  bottom: 16px;
   right: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 8px;
+  }
 `;
