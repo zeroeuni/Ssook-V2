@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+![image](https://github.com/songkimye/Sso-ok/assets/128370837/25fe9d6a-64f5-462b-8dee-b4241e3561b1)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🩵 쏘옥
+### **어려운 단어도 단번에, 쏘옥**
+<BR>
 
-## Available Scripts
+## 프로젝트 설명
+### 📆 기간
+2024.06.20 ~ 2024.07.03 (13일간)
 
-In the project directory, you can run:
+ㅤ
 
-### `npm start`
+### 🙋‍♀️ 팀원
+- **Frontend & Design** <br>
+    😉 **김영은**
+    😉 **송윤서**
+    😉 **조예설**
+  
+ㅤ
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🛠️ 사용기술
+**Frontend** - React , TypeScript , Styled Component <br>
+**Design** - Figma
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ㅤ
 
-### `npm test`
+### ▶️ [쏘옥 시연영상 보러가기기](https://youtu.be/iLaA55CUH0o)
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💡 쏘옥, 왜 필요한가? 
+고등학생인 저희 팀원들은 학교에서 영어단어시험이 있을 때 마다 **"클래스카드"** 를 사용하곤 했습니다. <br>
+너~무 편리했지만, 저희에게 필요한 기능들만 **딱 찝어서!** **딱 추가해서!** 사용하면 정말 편리할 것 같다고 생각했습니다. <br>
+<br>
+또 게임기능을 조금 더 살려 더 재밌고, 디자인을 조금 더 직관적으로 보완해서 더 사용하기 편리하게 하였습니다. <br>
+다양한 면에서 보다 좋은 **쏘옥** 을 위해 고민하고 힘써 개발했습니다!<br>
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ㅤ
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 어려운 단어도 단번에, 쏘옥! 을 소개합니다!
+### 1. 메인페이지
+![image](https://github.com/songkimye/Sso-ok/assets/128370837/31120327-58da-4a18-a902-b2e427f83a7e)
+#### -> 메인페이지에서 다양한 단어 학습을 선택할 수 있습니다! <br>
+#### -> 고등, 중등 학년 별로 필수 단어를 모아 원하는 것을 학습할 수 있습니다.
+<br><br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. 모드선택페이지
+![image](https://github.com/songkimye/Sso-ok/assets/128370837/af24dbab-ff53-446a-a967-7446ded72d73)
+#### -> 다양한 모드로 단어를 재미있게 학습할 수 있습니다 <br>
+#### -> 플래시모드(기본 베이직 외우기) . 사지선다(단어에 알맞은 의미 고르기) . 받아쓰기(단어에 알맞은 의미 쓰기) . 카드 맞추기(단어와 뜻 맞추기 형식의 게임 입니다.) <br><br>
 
-### `npm run eject`
+### 3. 플래시 카드
+![image](https://github.com/SSO-OK/Ssook/assets/128370837/6c38877b-8762-4252-aa78-41f923910994)
+#### -> 베이직하게 단어를 외울 수 있는 기능입니다.
+#### -> 카드를 클릭하여 단어의 의미를 확인하고 넘기며 단어를 암기할 수 있습니다.  <br><br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. 사지선다
+![image](https://github.com/SSO-OK/Ssook/assets/128370837/8d8f69ad-e81e-4b8b-8659-b4ee71d05b97)
+#### -> 객관식 영어단어 문제를 풀어볼 수 있습니다. <br><br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 5. 받아쓰기
+![image](https://github.com/SSO-OK/Ssook/assets/128370837/3c2f04e6-25be-4454-8ddf-e9ef517f7963)
+#### -> 주어진 단어에 의미를 작성하여 제대로 외웠는지 모의 시험을 칠 수 있는 기능입니다. <br><br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### 6. 카드 게임
+![image](https://github.com/SSO-OK/Ssook/assets/128370837/ade5eaf9-22ff-4031-ae0f-033f23a6d381)
+#### -> 재미있게 단어를 외울 수 있는 카드 맞추기 형식의 단어게임입니다. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+------------
 
-### Analyzing the Bundle Size
+ㅤ
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 😢 아쉬운 점
+- 백엔드 부재 <br>
+      현재 백엔드가 존재하지 않아, 데이터를 프론트에서 직접 넣어놓은 점이 아쉽습니다! <br>
+      v2에서 백엔드와 협업하여 데이터를 받아와 더 많은 단어들을 보여줄 수 있도록 하느 것이 목적입니다! <br>
+- 상태 관리 <br>
+      프론트 상태관리에 있어서 Redux를 꼭! 사용 해 보고 싶었는데, 빠르게 개발하는 것에 집중하느라 <br>
+      사용하지 못한 점이 매우 아쉽습니다. 또한 v2에서 꼭 사용하기로 계획했습니다.
 
-### Making a Progressive Web App
+ㅤ
+### ✏️ 향후계획
+- [ ] 빠르게 작업하느라 코드가 정돈되지 못한 점이 매우 아쉬워 코드 리팩토링을 진행 할 것 입니다.
+- [ ] 백엔드와 협업하여 많은 단어들을 가져올 것 입니다.
+- [ ] 다양한 기능들을 추가할 것 입니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br><br>
 
-### Advanced Configuration
+### ✨ 개발을 마무리하며...
+개발을 성공적으로 마무리하면서 뿌듯하고 학생들에게 꼭 필요한 웹을 만든 것 같아 기쁨이 매우컸습니다.
+하지만 조금 더 여유를 가지고 개발하여 클린하고 명확한 코드를 짤 수 있었다면 더할나위 없이 좋을 것 같습니다!
+마무리 후에도 지속적인 리팩토링을 거쳐 완벽한 쏘옥을 위하여 노력하겠습니다!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
