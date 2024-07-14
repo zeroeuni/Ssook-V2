@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as S from "./style";
 import word1 from "../../data/data1";
 
-const dictation = () => {
+const Dictation = () => {
   const [inputValue, setInputValue] = useState("");
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -70,4 +70,4 @@ const dictation = () => {
   );
 };
 
-export default dictation;
+export default Dictation;

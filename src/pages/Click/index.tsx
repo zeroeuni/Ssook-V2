@@ -1,4 +1,5 @@
 import * as S from "./style";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import flashcard from "../../assets/flash.svg";
 import multipleChoiceImage from "../../assets/four.svg";

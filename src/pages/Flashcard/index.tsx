@@ -13,9 +13,9 @@ const Flashcard: React.FC = () => {
   const handleKnow = () => {
     if (currentIndex < totalWords - 1) {
       setCurrentIndex(currentIndex + 1);
-      setShowWord(false); // Reset to hide word for the next meaning
+      setShowWord(false);
     } else {
-      setShowModal(true); // Show completion modal
+      setShowModal(true);
     }
   };
 
@@ -24,17 +24,16 @@ const Flashcard: React.FC = () => {
       const updatedWords = [...words];
       const currentWord = updatedWords.splice(currentIndex, 1)[0];
       updatedWords.push(currentWord);
-      setCurrentIndex(currentIndex + 1); // Move to the next word
-      setShowWord(false); // Reset to hide word for the next meaning
+      setCurrentIndex(currentIndex + 1);
+      setShowWord(false);
     } else {
-      setShowModal(true); // Show completion modal
+      setShowModal(true);
     }
   };
 
   const toggleWord = () => {
     setShowWord(!showWord);
   };
-
 
   return (
     <S.Container>

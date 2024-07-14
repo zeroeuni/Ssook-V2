@@ -1,6 +1,6 @@
 import * as S from "./style";
 import Logo from "../../assets/Logo.svg";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Start = () => {
   const [start, setStart] = useState(false);

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["react", "react-dom", "node"],
+    "target": "es5", // 컴파일된 JavaScript의 대상 버전
+    "module": "commonjs", // 모듈 시스템 (CommonJS는 Node.js와 호환됨)
+    "lib": ["dom", "es6"], // 사용할 라이브러리들
+    "jsx": "react", // JSX를 어떻게 처리할지
+    "strict": true, // 모든 엄격한 유형 검사 옵션 활성화
+    "moduleResolution": "node", // 모듈 해석 방법
+    "esModuleInterop": true, // ES 모듈 호환성
+    "skipLibCheck": true // 라이브러리 파일의 타입 검사 건너뛰기
+  },
+  "include": [
+    "src", // 포함할 파일 경로
+    "declarations.d.ts"
+  ]
+}
