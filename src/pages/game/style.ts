@@ -7,34 +7,53 @@ export const GameContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
+  width: 100%;
   background-color: #fbfbfb;
+
+  @media (max-width: 768px) {
+    padding-top: 10%;
+    padding-bottom: 30%;
+  }
 `;
 
 export const WordTitle = styled.p`
-  font-size: 15px;
+  font-size: 18px;
   font-family: "GmarketSansMedium";
   margin-bottom: 10px;
-  margin-right: 5%;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export const Timer = styled.p`
   font-size: 20px;
   font-family: "GmarketSansMedium";
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const CardBox = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    font-size: 11px;
+  }
 `;
 
 interface CardProps {
   matched: boolean | null;
   clickable?: boolean;
   clicked?: boolean;
-  notMatched?: boolean; // 새로 추가된 prop
+  notMatched?: boolean;
 }
 
 export const Card = styled.div<CardProps>`
@@ -53,8 +72,14 @@ export const Card = styled.div<CardProps>`
   cursor: ${({ clickable }) => (clickable ? "pointer" : "default")};
   user-select: none;
   transition: background-color 0.3s, border-color 0.3s;
+
   &:hover {
     background-color: #f0f0f0;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 10px;
   }
 `;
 
@@ -80,13 +105,23 @@ export const ModalContent = styled.div`
   text-align: center;
   font-size: 20px;
   font-family: "GmarketSansMedium";
+
+  @media (max-width: 768px) {
+    width: 80%;
+    font-size: 16px;
+  }
 `;
 
 export const Text = styled.text`
   margin-top: 2%;
   font-size: 20px;
   font-family: "GmarketSansMedium";
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
+
 export const ModalButton = styled.button`
   font-family: "GmarketSansMedium";
   margin-top: 5%;
@@ -97,8 +132,14 @@ export const ModalButton = styled.button`
   border-radius: 5px;
   padding: 5%;
   cursor: pointer;
+
   &:hover {
     background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 3%;
   }
 `;
 
@@ -108,10 +149,18 @@ export const TextBox = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 50%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const Time = styled.p`
   margin-top: 20px;
   font-size: 30px;
   font-family: "GmarketSansMedium";
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
