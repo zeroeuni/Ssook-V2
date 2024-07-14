@@ -20,7 +20,7 @@ const getShuffledOptions = (correctMean: string) => {
   return selectedOptions;
 };
 
-const Dictation: React.FC = () => {
+const Choice: React.FC = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(
     getRandomIndex(words.length),
   );
@@ -92,4 +92,4 @@ const Dictation: React.FC = () => {
   );
 };
 
-export default Dictation;
+export default Choice;
